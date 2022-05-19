@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Login Here</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css')}}" type="text/css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+      </head>
+<body>
+    <div class="bg-nav text-light d-flex flex-column flex-md-row align-items-center pb-3 mb-4 border-bottom">
+        <h5 class="my-0 mr-md-auto font-weight-normal">Movie Recommendation System</h5>
+  
+        <nav class=" d-inline-flex mt-2 mt-md-0 ms-md-auto">
+        <a class="text-light me-3 py-2  text-decoration-none" href="/support">Support</a>
+        </nav>
+        <a class='btn btn-outline-primary' href="/logout">Logout</a>
+    </div>
+
+   
+
+    
+    <form class="form" method="POST" action="{{url_for('recommendengine')}}">
+        <label >Movie Name</label><br>
+        <input id="movie" type="text" onkeyup="search_movie()" class="form-control" name="movie" placeholder="Enter movie name"><br>
+        <input type="submit" name="submit" value="Recommend Movies">
+    </form>
+
+    {%for names in m%}
+    <li class="name">{{names}}</li>
+    {%endfor%}
+    
+    
+    
+
+
+    <script>// JavaScript code
+        function search_movie() {
+            let input = document.getElementById('movie').value
+            input=input.toLowerCase();
+            let x = document.getElementsByClassName('name');
+            
+            for (i = 0; i < x.length; i++) {
+                if (!x[i].innerHTML.toLowerCase().includes(input)) {
+                    x[i].style.display="none";
+                }
+                else {
+                    x[i].style.display="list-item";				
+                }
+            }
+        }
+        </script>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+</body>
+</html>
+

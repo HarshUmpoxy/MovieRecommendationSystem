@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .first {
+            display: grid;
+            grid-template-columns: 33% 33% 33%;
+            background-image: linear-gradient(#f5af19, #f12711);
+            margin: 2vw;
+            box-shadow: 0 0 2vw black;
+            border-radius: 1vw;
+            padding-bottom: 2vw;
+            padding-top: 1vw;
+        }
+
+        .second {
+            font-size: 1.5vw;
+            text-align: center;
+            /* opacity: .6; */
+        }
+
+        .second img {
+            box-shadow: 0vw 0vw 1vw black;
+            border-radius: 1vw;
+            opacity: 1;
+
+        }
+
+        .heading {
+            text-align: center;
+            font-size: 3vw;
+            font-family: futura;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 class="heading">
+        Suggested Movies: -
+    </h1>
+    <div class="first">
+        {% for row in name %}
+        <div class="second">
+            <p style="font-family:Montserrat"> {{row.0}}</p>
+            <img src="{{row.1}}" alt="" width="250px" style="opacity:1">
+        </div>
+        {% endfor %}
+    </div>
+
+</body>
+
+</html>
