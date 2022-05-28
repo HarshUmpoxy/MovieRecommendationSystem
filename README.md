@@ -48,15 +48,15 @@ python run main.py
 
 ### Images
 
-![Movie Recommendation 1](https://user-images.githubusercontent.com/100594040/170836396-291ed4ca-4e5c-4ed4-92fc-ddef8b031f7c.png=250x)
+![Movie Recommendation 1](https://user-images.githubusercontent.com/100594040/170836396-291ed4ca-4e5c-4ed4-92fc-ddef8b031f7c.png)
 
-![Movie Recommendation 2](https://user-images.githubusercontent.com/100594040/170836405-230e2d1f-a00e-43bf-b679-a05cd3602908.png=250x)
+![Movie Recommendation 2](https://user-images.githubusercontent.com/100594040/170836405-230e2d1f-a00e-43bf-b679-a05cd3602908.png)
 
-![register](https://user-images.githubusercontent.com/100594040/170836415-45bff946-74ec-4732-9830-d5f029144268.png=250x)
+![register](https://user-images.githubusercontent.com/100594040/170836415-45bff946-74ec-4732-9830-d5f029144268.png)
 
-![login](https://user-images.githubusercontent.com/100594040/170836423-f1f5c7ab-3189-4860-a894-21a7229c9874.png=250x)
+![login](https://user-images.githubusercontent.com/100594040/170836423-f1f5c7ab-3189-4860-a894-21a7229c9874.png)
 
-![localhost_5000_recommend_engine (3)](https://user-images.githubusercontent.com/100594040/170836427-76f064b4-4b5f-4c35-bac1-4210a4bd5618.png=250x)
+![localhost_5000_recommend_engine (3)](https://user-images.githubusercontent.com/100594040/170836427-76f064b4-4b5f-4c35-bac1-4210a4bd5618.png)
 
 
 
